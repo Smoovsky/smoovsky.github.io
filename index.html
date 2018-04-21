@@ -1,0 +1,230 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>smokovsky profile</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet"  type="text/css" href="./public/site/site.css">
+  <script type="text/javascript" src="./scripts/map.js" defer></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src='https://www.google.com/recaptcha/api.js' defer></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb9Gm5y-lTE8hyKyIvSK9AOpruq0S662M&callback=initMap" defer></script>
+  <script type="text/javascript" src="./scripts/main.js" defer></script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col">Shang <span style="color: #3F51B5">Chen</span></div>
+        <div class="col">
+          <div class="row float-right" id="navlinks">
+            <li><a>Home</a></li>
+            <li><a>Resume</a></li>
+            <li><a>Contact</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="container container-cus show" id="home">
+    <div class="profile-card">
+      <div class="profile-card__header">
+        <div class="row">
+          <div class="col">
+            <div class="profile-card__photo--wrapper">
+              <img src="./images/profile.png" alt="smokovsky Photo">
+            </div>
+          </div>
+          <div class="col title">
+            <div class="row">
+              <div class="col">
+                <h2 style="color:white;font-size:3em;">Shang Chen</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" style="color:white;font-size:1em;">
+                Frone End Developer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card__body">
+        <div class="row">
+          <div class="col">
+            <h4>About <span style="color: #3F51B5">Me</span></h4>
+            <p>Front-end developer with great passion in lastest technologies.</p>
+          </div>
+          <div class="col personal-details">
+            <div class="row">
+              <div class="col-4">
+                <strong>Age</strong>
+              </div>
+              <div class="col-8">
+                22
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <strong>Location</strong>
+              </div>
+              <div class="col-8">
+                Parkville, VIC3052, Australia
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <strong>E-mail</strong>
+              </div>
+              <div class="col-8">
+                chenshang920@hotmail.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container container-cus from-hide dp-none" id="resume">
+    <div class="profile-card">
+      <div class="row resume-header">
+        <h1>Resume</h1>
+      </div>
+      <div class="row resume-body">
+        <div class="col">
+          <h2>Education</h2>
+          <div class="timeline-container">
+            <div class="timeline-item">
+              <h2>Bachelor of Science(Electrical System)</h2>
+              <h3>2013-2016</h3><h3>The University of Melbourne</h3>
+            </div>
+            <div class="timeline-item">
+              <h2>Master of Engineering(Electrical)</h2>
+              <h3>2016-2018</h3><h3>The University of Melbourne</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row resume-body">
+        <div class="col">
+          <h2>Coding <span style="color:#3F51B5">Skills</span></h2>
+          <div class="skill-item">
+            <h3>HTML+CSS</h3>
+            <div class="bar-container">
+              <div class="bar" style="width:80%">
+
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3>Javascript</h3>
+            <div class="bar-container">
+              <div class="bar" style="width:80%">
+
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3>JQuery</h3>
+            <div class="bar-container">
+              <div class="bar" style="width:70%">
+
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3>ReactJS</h3>
+            <div class="bar-container">
+              <div class="bar" style="width:80%">
+
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3>C#</h3>
+            <div class="bar-container">
+              <div class="bar" style="width:60%">
+
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3>Java</h3>
+            <div class="bar-container">
+              <div class="bar" style="width:70%">
+
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3>Python</h3>
+            <div class="bar-container">
+              <div class="bar" style="width:70%">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container container-cus from-hide dp-none" id="contact">
+    <div class="profile-card">
+      <div class="row resume-header">
+        <h1>Contact</h1>
+      </div>
+      <div class="row resume-body">
+        <div class="col">
+          <h2 class="contact-title">Get in <span style="color:#3F51B5">Touch</span></h2>
+          <div class="" id="map">
+
+          </div>
+        </div>
+        <div class="col">
+          <h2 class="contact-title">Contact <span style="color:#3F51B5">Form</span></h2>
+          <form class="form-container" action="index.html" method="post">
+            <div class="">
+              <div class="">
+                <i class="far fa-user"></i>
+              </div>
+              <input type="text" name="name" id="input-name" placeholder="Name">
+            </div>
+            <div class="">
+              <div class="">
+                <i class="far fa-envelope"></i>
+              </div>
+              <input type="text" name="email" id="input-email" placeholder="E-mail">
+            </div>
+            <div class="">
+              <div class="">
+                <i class="far fa-comment"></i>
+              </div>
+              <textarea name="message" placeholder="Please leave your message here"></textarea>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6Le_hlQUAAAAAIowngP6iNkA5SkEW2quCAeJDkj7"></div>
+            <div class="">
+              <button type="button" name="button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+  </section>
+</body>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</html>
