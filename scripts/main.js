@@ -20,7 +20,7 @@ let transition = (a, b) => {
       $('#'+a).toggleClass('to-hide');
       $('#'+b).toggleClass('show');
       $('#'+b).toggleClass('from-hide');
-    }, 10);
+    }, 100);
   },500);
   currrentPage = b;
 }
