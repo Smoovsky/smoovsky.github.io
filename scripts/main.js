@@ -13,15 +13,15 @@ let transition = (a, b) => {
   $('#'+a).toggleClass('to-hide');
   $('#'+a).toggleClass('show');
   setTimeout(()=>{
-    $('#'+a).toggleClass('dp-none');
-    $('#'+b).toggleClass('dp-none');
+    $('#'+a).css({display:'none'});
+    $('#'+b).css({display:'block'});
     setTimeout(()=>{
       $('#'+a).toggleClass('from-hide');
       $('#'+a).toggleClass('to-hide');
       $('#'+b).toggleClass('show');
       $('#'+b).toggleClass('from-hide');
-    }, 100);
-  },500);
+    }, 50);
+  },550);
   currrentPage = b;
 }
 
