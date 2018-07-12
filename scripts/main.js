@@ -41,6 +41,5 @@ window.onscroll = () => {
 
 var form = $('#contact-form').submit(function(event){
   event.preventDefault();
-  //this.contact_number.value = Math.random() * 100000 | 0;
-  emailjs.sendForm('outlook', 'contact', this);
+  emailjs.sendForm('outlook', 'contact', this).then(function(){window.alert('Thank you for your message! I will get back to you ASAP!');}).catch(function(){window.alert('Something went wrong...');});
 });
