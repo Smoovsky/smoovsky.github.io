@@ -308,3 +308,36 @@ i{
   margin: auto;
   border:none;
 }
+
+.portfolio-card{
+  width:85%;
+  margin:10px auto;
+  padding:0px;
+  /* background-color: white; */
+}
+
+.portfolio-card>li{
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.portfolio-item-title{
+  border-bottom: 1px solid rgb(63, 81, 181,0.3)
+}
+
+.portfolio-item-description{
+  color:rgba(0,0,0,0.6);
+}
+
+.portfolio-item-features{
+  color: rgb(26, 35, 126,0.9);
+  font-size: 14px;
+  padding: 5px 30px;
+}
+
+.portfolio-item-link{
+  font-size: 14px;
+  margin-bottom: 5px;
+}

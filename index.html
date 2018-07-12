@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet"  type="text/css" href="./public/site/site.css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
   <script type="text/javascript" src="./scripts/map.js" defer></script>
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -17,7 +18,6 @@
   <script type="text/javascript" src='https://www.google.com/recaptcha/api.js' defer></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb9Gm5y-lTE8hyKyIvSK9AOpruq0S662M&callback=initMap" defer></script>
   <script type="text/javascript" src="./scripts/main.js" defer></script>
-
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -32,6 +32,7 @@
           <div class="row float-right" id="navlinks">
             <li><a>Home</a></li>
             <li><a>Resume</a></li>
+            <li><a>Portfolio</a></li>
             <li><a>Contact</a></li>
           </div>
         </div>
@@ -180,6 +181,87 @@
       </div>
     </div>
   </section>
+  <section class="container container-cus from-hide " id="portfolio" style="display:none">
+    <div class="profile-card">
+      <div class="row resume-header">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="row resume-body">
+        <ul class="portfolio-card">
+          <li>
+            <h2 class="portfolio-item-title">Readable</h2>
+            <span class="portfolio-item-description">A single page application of message board based on Reactjs and Ant Design UI framework.</span>
+            <ul class="portfolio-item-features">
+              <li>•&nbsp;&nbsp;Mobile Friendly</li>
+              <li>•&nbsp;&nbsp;State management with redux</li>
+              <li>•&nbsp;&nbsp;Routing with react router</li>
+              <li>•&nbsp;&nbsp;Asynchronous CRUD actions with thunk</li>
+              <li>•&nbsp;&nbsp;Data is maintained by a Nodejs backend server deployed onto AWS EC2</li>
+            </ul>
+            <p class="portfolio-item-link">
+              Demo: <a href="http://smokovsky.club/" target="_blank">http://smokovsky.club/</a>
+            </p>
+            <p class="portfolio-item-link">
+              Source: <a href="https://github.com/Smoovsky/readable" target="_blank">https://github.com/Smoovsky/readable</a>
+            </p>
+          </li>
+          <li>
+            <h2 class="portfolio-item-title">Memo Card</h2>
+            <span class="portfolio-item-description">A react native application helps user to memorize by setting up customized quiz cards.</span>
+            <ul class="portfolio-item-features">
+              <li>•&nbsp;&nbsp;State management with redux</li>
+              <li>•&nbsp;&nbsp;Navigation with react navigation</li>
+              <li>•&nbsp;&nbsp;CRUD operation consistent with mobile user experience</li>
+              <li>•&nbsp;&nbsp;User data storage</li>
+              <li>•&nbsp;&nbsp;Animated UI</li>
+              <li>•&nbsp;&nbsp;Native notification push</li>
+            </ul>
+            <p class="portfolio-item-link">
+              Demo: <a href="https://snack.expo.io/@smokovsky/memo-card" target="_blank">https://snack.expo.io/@smokovsky/memo-card</a>
+            </p>
+            <p class="portfolio-item-link">
+              Source: <a href="https://github.com/Smoovsky/memo_card" target="_blank">https://github.com/Smoovsky/memo_card</a>
+            </p>
+            <p class="portfolio-item-link">
+              Release(Android): <a href="https://github.com/Smoovsky/memo_card/releases" target="_blank">https://github.com/Smoovsky/memo_card/releases</a>
+            </p>
+          </li>
+          <li>
+            <h2 class="portfolio-item-title">Neighbour Map</h2>
+            <span class="portfolio-item-description">An application allows user to search and save their favourite locations.</span>
+            <ul class="portfolio-item-features">
+              <li>•&nbsp;&nbsp;Mobile Friendly</li>
+              <li>•&nbsp;&nbsp;MVVM binding with Knockout.js</li>
+              <li>•&nbsp;&nbsp;Location search and preview with google map api</li>
+              <li>•&nbsp;&nbsp;Rating and price are available if the location is a restaurant, provided by Zomato api</li>
+              <li>•&nbsp;&nbsp;Offline storage with localstorage</li>
+            </ul>
+            <p class="portfolio-item-link">
+              Demo: <a href="http://smokovsky.club/neighbour-map/" target="_blank">http://smokovsky.club/neighbour-map/</a>
+            </p>
+            <p class="portfolio-item-link">
+              Source: <a href="https://github.com/Smoovsky/neighbour_map" target="_blank">https://github.com/Smoovsky/neighbour_map</a>
+            </p>
+          </li>
+          <li>
+            <h2 class="portfolio-item-title">Memory Game</h2>
+            <span class="portfolio-item-description">A mini-game of block elimination that tests player's memory!</span>
+            <ul class="portfolio-item-features">
+              <li>•&nbsp;&nbsp;Responsive</li>
+              <li>•&nbsp;&nbsp;Built on jQuery</li>
+              <li>•&nbsp;&nbsp;Fancy animation</li>
+            </ul>
+            <p class="portfolio-item-link">
+              Demo: <a href="http://smokovsky.club/memo-game/" target="_blank">http://smokovsky.club/memo-game/</a>
+            </p>
+            <p class="portfolio-item-link">
+              Source: <a href="https://github.com/Smoovsky/memory_game" target="_blank">https://github.com/Smoovsky/memory_game</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <section class="container container-cus from-hide " id="contact"  style="display:none">
     <div class="profile-card">
       <div class="row resume-header">
@@ -194,7 +276,7 @@
         </div>
         <div class="col">
           <h2 class="contact-title">Contact <span style="color:#3F51B5">Form</span></h2>
-          <form class="form-container" action="index.html" method="post">
+          <form id="contact-form" class="form-container" action="index.html" method="post">
             <div class="">
               <div class="">
                 <i class="far fa-user"></i>
@@ -215,7 +297,7 @@
             </div>
             <div class="g-recaptcha" data-sitekey="6Le_hlQUAAAAAIowngP6iNkA5SkEW2quCAeJDkj7"></div>
             <div class="">
-              <button type="button" name="button">Submit</button>
+              <button type="submit" name="button">Submit</button>
             </div>
           </form>
         </div>
@@ -226,5 +308,4 @@
     </div>
   </section>
 </body>
-<script src='https://www.google.com/recaptcha/api.js'></script>
 </html>

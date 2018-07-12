@@ -1,5 +1,9 @@
-let main = "main", resume = "resume", contact = "contact";
-let currrentPage = "home";
+(function(){
+   emailjs.init("user_O7w0MzBQdIQSFEYvgBYnH");
+})();
+
+let main = 'main', resume = 'resume', contact = 'contact';
+let currrentPage = 'home';
 
 let navlinks = $('#navlinks').children();
 navlinks.each((i, x)=>{
@@ -23,7 +27,7 @@ let transition = (a, b) => {
     }, 50);
   },550);
   currrentPage = b;
-}
+};
 
 window.onscroll = () => {
   let header = $('header');
@@ -33,4 +37,10 @@ window.onscroll = () => {
   else{
     header.removeClass('header-scrolled');
   }
-}
+};
+
+var form = $('#contact-form').submit(function(event){
+  event.preventDefault();
+  //this.contact_number.value = Math.random() * 100000 | 0;
+  emailjs.sendForm('outlook', 'contact', this);
+});
